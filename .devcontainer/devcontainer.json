@@ -20,7 +20,7 @@
 				"ms-toolsai.jupyter"
 			]
 		}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -29,7 +29,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": "pip install -r /workspaces/Cisco-AI-Agent/requirements.txt",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
