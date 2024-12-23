@@ -1,2 +1,2 @@
-pyats
 boto3
+pyats[full]
