@@ -1,2 +1,10 @@
 boto3
 pyats[full]
+pytest
+pydantic
+pydantic-ai
+fastapi[standard]
+ollama
+openai
+google-cloud-aiplatform
+anthropic
