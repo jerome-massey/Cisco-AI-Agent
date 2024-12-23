@@ -1,0 +1,26 @@
+testbed:
+  name: market-template-testbed
+  credentials:
+    default:
+      username: "%ASK{}"
+      password: "%ASK{Password won't be echoed}"
+
+devices:
+  device1:
+    os: iosxe
+    type: router
+    connections:
+      defaults:
+        class: unicon.Unicon
+      a:
+        protocol: ssh
+        ip: 192.168.1.1
+  device2:
+    os: iosxe
+    type: switch
+    connections:
+      defaults:
+        class: unicon.Unicon
+      a:
+        protocol: ssh
+        ip: 192.168.1.2
