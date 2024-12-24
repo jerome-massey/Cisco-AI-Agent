@@ -1,0 +1,36 @@
+testbed:
+  name: test-testbed
+  credentials:
+    default:
+      username: "%ASK{}"
+      password: "%ASK{Password won't be echoed}"
+
+devices:
+  U1-SS-1010-4TH-SW1:
+    os: ios
+    type: switch
+    connections:
+      a:
+        protocol: ssh
+        ip: 10.108.104.1
+  U1-SS-1010-6TH-SW0:
+    os: ios
+    type: switch
+    connections:
+      a:
+        protocol: ssh
+        ip: 172.16.0.11
+  U1-SS-1010-9TH-SW1:
+    os: ios
+    type: switch
+    connections:
+      a:
+        protocol: ssh
+        ip: 172.16.0.19
+  U1-SS-1010-12TH-SW1:
+    os: ios
+    type: switch
+    connections:
+      a:
+        protocol: ssh
+        ip: 10.118.112.1
