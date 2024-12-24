@@ -13,6 +13,7 @@ devices:
       a:
         protocol: ssh
         ip: 10.108.104.1
+        ssh_options: -o KexAlgorithms=+diffie-hellman-group1-sha1 -o Ciphers=+aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc -o HostKeyAlgorithms=+ssh-rsa
   U1-SS-1010-6TH-SW0:
     os: ios
     type: switch
@@ -20,6 +21,7 @@ devices:
       a:
         protocol: ssh
         ip: 172.16.0.11
+        ssh_options: -o KexAlgorithms=+diffie-hellman-group1-sha1 -o Ciphers=+aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc -o HostKeyAlgorithms=+ssh-rsa
   U1-SS-1010-9TH-SW1:
     os: ios
     type: switch
@@ -27,6 +29,7 @@ devices:
       a:
         protocol: ssh
         ip: 172.16.0.19
+        ssh_options: -o KexAlgorithms=+diffie-hellman-group1-sha1 -o Ciphers=+aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc -o HostKeyAlgorithms=+ssh-rsa
   U1-SS-1010-12TH-SW1:
     os: ios
     type: switch
@@ -34,3 +37,4 @@ devices:
       a:
         protocol: ssh
         ip: 10.118.112.1
+        ssh_options: -o KexAlgorithms=+diffie-hellman-group1-sha1 -o Ciphers=+aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc -o HostKeyAlgorithms=+ssh-rsa
